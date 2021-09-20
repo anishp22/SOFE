@@ -1,3 +1,5 @@
+// WindowsFactory with methods to instantiate a windows phone or windows laptop product
+
 public class WindowsFactory implements AbstractDeviceFactory{
 
     public Laptop createLaptop() {
