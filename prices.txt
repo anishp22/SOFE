@@ -1,0 +1,4 @@
+WindowsLaptop 1300
+WindowsPhone 800
+MacLaptop 1600
+MacPhone 1100
