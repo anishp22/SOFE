@@ -1,4 +1,4 @@
-// Basic interface for the factorys
+// Basic Abstract Factory with object creation methods
 
 public interface AbstractDeviceFactory{
     Laptop createLaptop();
