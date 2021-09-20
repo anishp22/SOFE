@@ -3,6 +3,7 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
+// Produces the appropriate factory to create the concrete products
 public class FactoryProducer {
     public static AbstractDeviceFactory getFactoryType(String factoryType){
         if("windows".equalsIgnoreCase(factoryType)){
@@ -16,33 +17,21 @@ public class FactoryProducer {
         return null;
     }
 
-
+    // Function that can query the device name and return the appropriate price from the prices.txt file
     public static void PricesReader(String deviceName) throws FileNotFoundException{
         File file = new File("prices.txt");
         Scanner scan = new Scanner(file);
 
-        //System.out.println(scan.nextLine());
 
         ArrayList prices = new ArrayList();
 
         String pricesDatabase = "";
         while(scan.hasNextLine()){
-            //pricesDatabase = pricesDatabase.concat(scan.nextLine() + "\n");
             prices.add(scan.next());
         }
 
-        //System.out.println(pricesDatabase);
-        //String[] pricesTable = pricesDatabase.split(" ");
-        //System.out.println(Arrays.toString(pricesTable));
-
         System.out.println("Price: " + prices.get(prices.indexOf(deviceName)+1));
-
-
-
-
-
     }
-
 }
 
 
