@@ -31,5 +31,6 @@ This project was developed using IntelliJIDEA.  <br>
 .idea and out/production/Assignment1 folders are required by the IDE.  <br>
 src folder contains the .java files for this program.  <br>
 test folder contains the driver test code. <br>
+prices.txt contains the prices for the devices.
 
 
