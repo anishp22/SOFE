@@ -1,8 +1,6 @@
 # SOFE3650-Assignment1
 
-
-Team Members
-=============================
+Created By:
 Anish Patel 100751489
 David Fung 100767334
 Nathan Yohannes 100749914 
