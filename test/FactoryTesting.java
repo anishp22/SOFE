@@ -7,11 +7,13 @@
 
 import java.io.FileNotFoundException;
 
+
+// Driver class to create test objects
 public class FactoryTesting {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        //Test Case 1
+        //Test Case 1 which produces a Windows Laptop object
         AbstractDeviceFactory testFactory1 = FactoryProducer.getFactoryType("windows");
         Laptop device1 = testFactory1.createLaptop();
 
@@ -19,7 +21,7 @@ public class FactoryTesting {
         FactoryProducer.PricesReader(device1.toString());
 
 
-        //Test Case 2
+        //Test Case 2 which produces a Mac Phone object
         AbstractDeviceFactory testFactory2 = FactoryProducer.getFactoryType("mac");
         Phone device2 = testFactory2.createPhone();
 
